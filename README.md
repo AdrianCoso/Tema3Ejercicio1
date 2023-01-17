@@ -1,4 +1,4 @@
-﻿#Ejercicio 1
+﻿# Ejercicio 1
 En un formulario con título “Mouse Tester” coloca dos botones. Debe actuar de 
 la siguiente forma:
 • Cada vez que el ratón esté dentro del formulario se debe indicar la 
