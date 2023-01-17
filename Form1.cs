@@ -66,10 +66,24 @@ namespace Tema3Ejercicio1
             }
         }
 
-        private void Tecla(object sender, KeyPressEventArgs e)
+        private void Tecla(object sender, KeyEventArgs e)
         {
-            this.Text = e.KeyChar.ToString();
+            if(e.KeyCode == Keys.Escape)
+            {
+                this.Text = "Mouse Tester";
+            } 
+            else
+            {
+                this.Text = e.KeyCode.ToString();
+            }
         }
 
+        private void Cerrar(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea salir?", "Mouse Tester", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
