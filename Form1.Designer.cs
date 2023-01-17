@@ -41,6 +41,8 @@
             this.button1.Text = "Botón derecho";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Botones);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Soltar);
             // 
             // button2
             // 
@@ -51,6 +53,8 @@
             this.button2.Text = "Botón izquierdo";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Botones);
+            this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Soltar);
             // 
             // Form1
             // 
